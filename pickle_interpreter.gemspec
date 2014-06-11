@@ -1,3 +1,5 @@
+require 'rake'
+
 Gem::Specification.new do |s|
   s.name        = 'pickle-interpreter'
   s.version     = '0.1.0'
