@@ -368,7 +368,14 @@ class PickleInterpreter
 	register_instruction("F".ord, :FLOAT)
 
 	def instr_BINFLOAT(instruction_stack)
-		raise "FIXME - need BINFLOAT"
+		str = ""
+		ctr = 0
+		while(ctr < 8) do
+			str = "#{str}#{instruction_stack.shift.chr}"
+			ctr = ctr + 1
+		end
+		val = str.unpack("G")[0]
+		@stack.push(val)
 	end
 	register_instruction("G".ord, :BINFLOAT)
 
