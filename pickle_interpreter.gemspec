@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version     = '0.1.0'
   s.date        = '2014-06-10'
   s.summary     = "A Ruby Pickle interpreter to unpickle Python objects"
-  s.description = "A library to read pickled objects from pythong in Ruby"
+  s.description = "A library to read pickled objects (proto 2) from Python in Ruby"
   s.authors     = ["Jonathan Bartlett"]
   s.email       = 'jonathan@newmedio.com'
   s.files       = FileList['lib/**/*.rb',
